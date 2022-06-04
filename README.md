@@ -393,7 +393,9 @@ i = s2Ptr
 //  下面代码无法通过编译。因为 s2Val 是一个值，而 S2 的 f 方法中没有使用值接收器
 //   i = s2Val
 ```
+为什么叫值接收器呢？因为可以接收值。即上面的s2Val是值，只能被值接收器的f()接收。
 
+指针接收器既可以接收指针又可以接收值。
 [Effective Go](https://golang.org/doc/effective_go.html) 中有一段关于 [pointers vs. values](https://golang.org/doc/effective_go.html#pointers_vs_values) 的精彩讲解。
 
 补充：
